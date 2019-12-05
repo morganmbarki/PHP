@@ -17,12 +17,10 @@ $no = 'Vous avez répondu non';
       <?php
       if($answer == 'yes'){
         echo $yes;
+      }elseif($answer == 'no'){
+        echo $no;
       }else{
-        if($answer == 'no'){
-          echo $no;
-        }else{
-          echo 'Fait ce qui est demandé !';
-        }
+        echo 'Fait ce qui est demandé !';
       }
       ?>
     </p>

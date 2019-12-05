@@ -1,5 +1,5 @@
 <?php
-$name = 'Morgan'
+$numbers = 0;
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -9,11 +9,11 @@ $name = 'Morgan'
   </head>
   <body>
     <?php
-    function name($coucou)
-    {
-        return $coucou;
-    }
-    echo name($name);
+    while($numbers < 300){
+      $numbers = $numbers + 1;
+      if($numbers % 2 == 1){
     ?>
+      <p><?= $numbers;?></p>
+    <?php } } ?>
   </body>
 </html>

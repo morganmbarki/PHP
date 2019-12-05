@@ -1,5 +1,8 @@
 <?php
-
+function name($coucou = 'hello', $grr = 'Morgan')
+{
+  return $coucou . 'Mr' . $grr;
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -9,11 +12,7 @@
   </head>
   <body>
     <?php
-    function name($coucou)
-    {
-        return $coucou;
-    }
-    echo name('Morgan');
+    echo name();
     ?>
   </body>
 </html>

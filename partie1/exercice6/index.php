@@ -1,7 +1,7 @@
 <!-- le php pour ce qui n'est pas de l'affichage -->
 <?php
 // déclaration des variables (les noms que l'on veux)
-$number = '140';
+$number = 140;
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">

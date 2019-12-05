@@ -1,5 +1,5 @@
 <?php
-$month = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+$months = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -9,9 +9,11 @@ $month = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet',
   </head>
   <body>
     <?php
-    foreach ($month as $element) {
-      echo $element . '<br/>';
-    };
+    /*Pour chaque éléments du tableau months on affiche ses éléments
+    La boucle foreach est plus adaptée pour les tableaux */
+    foreach ($months as $month) {
     ?>
+      <p><?= $month; ?></p>
+    <?php }; ?>
   </body>
 </html>

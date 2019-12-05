@@ -24,14 +24,13 @@ $gender = 'homme';
     //   echo 'Vous êtes un ' . $gender . 'et vous êtes mineur';
     // }
 
-    if($age >= 18 And $gender == 'homme' Or $gender == 'femme'){
+    if($age >= 18 && $gender == 'homme' || $gender == 'femme'){
       echo 'Vous êtes un ' . $gender . ' et vous êtes majeur';
-    }elseif($age <= 17 And $gender == 'homme' Or $gender == 'femme'){
+    }elseif($age <= 17 && $gender == 'homme' || $gender == 'femme'){
       echo 'Vous êtes un ' . $gender . ' et vous êtes mineur';
     }else{
       echo 'Vous êtes quoi ????';
     }
-
     ?>
   </body>
 </html>
