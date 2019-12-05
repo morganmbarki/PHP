@@ -1,18 +1,20 @@
 <?php
-
+//Création d'une varaible avec 2 paramètres $a et $b
+function number($name, $firstname, $age){
+  //On récupère la réponse de la fonction avec le return
+  return $result;
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Exercice 4</title>
   </head>
   <body>
     <?php
-    function infos($lastname = 'MBARKI', $firstname = 'Morgan', $age = 24){
-    return 'Bonjour ' . $lastname . ' ' . $firstname . ', tu as ' . $age . 'ans';
-    }
-    echo infos();
+    $resultIs = number('Mbarki', 'Morgan', '24');
+    echo $resultIs[0];
     ?>
   </body>
 </html>
