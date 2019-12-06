@@ -1,5 +1,5 @@
 <?php
-//déclaration d'une variable contenant une valeur numérique
+//déclaration d'une variable contenant une valeur numérique (sert pour la boucle while)
 $numbers = 0;
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,8 @@ $numbers = 0;
   <body>
     <?php
     while($numbers < 100){
-      $numbers = $numbers + 1;
+      //Incrementation de 1 en 1 avec opérateur d'incrementation '++'
+      $numbers++;
       //Mettre la condition la plus "complete" en premier (sinon elle passe à la trape)
       if($numbers % 3 == 0 && $numbers % 5 == 0){
     ?>
